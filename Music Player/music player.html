@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JD Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+        <div class="music-display">
+            
+        
+            <img src="musicIcon.jpg">
+            <div class="audio-display">
+                <audio src=""></audio>
+            </div>
+            <p>Craennie Music Player</p>
+            <input type="range" class="range" value="0" max="100">
+            <div class="controls">
+                <button class="redVol"><i class="fa fa-volume-down" aria-hidden="true"></i>
+                </button>
+                <button class="playerBtn"><i class="fa fa-play"></i></button> 
+                <button class="pauseBtn"><i class="fa fa-pause" aria-hidden="true"></i>
+                </button>
+                 <button class="incVol"><i class="fa fa-volume-up" aria-hidden="true"></i></i>
+                 </button>
+            </div>
+        </div>
+
+        <div class="playlist">
+            <i class="fa fa-times" aria-hidden="true"></i>
+
+            <ul id="list">
+               
+            </ul>
+           <br>
+            <label><i class="fa fa-plus" aria-hidden="true"></i>
+
+               <input type="file" id="audioFile" accept="audio/mp3, audio/wav, audio/ogg" onchange="readFile()">
+
+            </label>
+        </div>
+
+        <ul id="saved" style="width:10px; display:none ;">
+           
+        </ul>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
